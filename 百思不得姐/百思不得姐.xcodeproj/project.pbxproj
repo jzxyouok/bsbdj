@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		77A5A1BF1CEDB4AD00DABE07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A5A1BE1CEDB4AD00DABE07 /* main.m */; };
 		77A5A1C21CEDB4AD00DABE07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A5A1C11CEDB4AD00DABE07 /* AppDelegate.m */; };
-		77A5A1C51CEDB4AD00DABE07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A5A1C41CEDB4AD00DABE07 /* ViewController.m */; };
 		77A5A1CA1CEDB4AD00DABE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77A5A1C91CEDB4AD00DABE07 /* Assets.xcassets */; };
 		77A5A1D81CEDB4AD00DABE07 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A5A1D71CEDB4AD00DABE07 /* _____Tests.m */; };
 		77A5A1E31CEDB4AD00DABE07 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A5A1E21CEDB4AD00DABE07 /* _____UITests.m */; };
+		77A5A1F21CEDC63E00DABE07 /* JQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A5A1F11CEDC63E00DABE07 /* JQTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 		77A5A1BE1CEDB4AD00DABE07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77A5A1C01CEDB4AD00DABE07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77A5A1C11CEDB4AD00DABE07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		77A5A1C31CEDB4AD00DABE07 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		77A5A1C41CEDB4AD00DABE07 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		77A5A1C91CEDB4AD00DABE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77A5A1CE1CEDB4AD00DABE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77A5A1D31CEDB4AD00DABE07 /* 百思不得姐Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +45,8 @@
 		77A5A1DE1CEDB4AD00DABE07 /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A5A1E21CEDB4AD00DABE07 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		77A5A1E41CEDB4AD00DABE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A5A1F01CEDC63E00DABE07 /* JQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQTabBarController.h; sourceTree = "<group>"; };
+		77A5A1F11CEDC63E00DABE07 /* JQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 			children = (
 				77A5A1C01CEDB4AD00DABE07 /* AppDelegate.h */,
 				77A5A1C11CEDB4AD00DABE07 /* AppDelegate.m */,
-				77A5A1C31CEDB4AD00DABE07 /* ViewController.h */,
-				77A5A1C41CEDB4AD00DABE07 /* ViewController.m */,
+				77A5A1F01CEDC63E00DABE07 /* JQTabBarController.h */,
+				77A5A1F11CEDC63E00DABE07 /* JQTabBarController.m */,
 				77A5A1BD1CEDB4AD00DABE07 /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -196,6 +196,7 @@
 		77A5A1B21CEDB4AB00DABE07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JQ;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "王家齐";
 				TargetAttributes = {
@@ -262,8 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77A5A1C51CEDB4AD00DABE07 /* ViewController.m in Sources */,
 				77A5A1C21CEDB4AD00DABE07 /* AppDelegate.m in Sources */,
+				77A5A1F21CEDC63E00DABE07 /* JQTabBarController.m in Sources */,
 				77A5A1BF1CEDB4AD00DABE07 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +472,7 @@
 				77A5A1E91CEDB4AD00DABE07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77A5A1EA1CEDB4AD00DABE07 /* Build configuration list for PBXNativeTarget "百思不得姐Tests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +481,7 @@
 				77A5A1EC1CEDB4AD00DABE07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77A5A1ED1CEDB4AD00DABE07 /* Build configuration list for PBXNativeTarget "百思不得姐UITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +490,7 @@
 				77A5A1EF1CEDB4AD00DABE07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
