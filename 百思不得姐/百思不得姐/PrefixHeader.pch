@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by 王家齐 on 16/5/20.
+//  Copyright © 2016年 王家齐. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+JQExtension.h"
+
+#endif /* PrefixHeader_pch */

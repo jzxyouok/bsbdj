@@ -12,6 +12,7 @@
 		293AAAD71CEE0C1300DE1919 /* JQFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 293AAAD61CEE0C1300DE1919 /* JQFriendTrendsViewController.m */; };
 		293AAADA1CEE0C2300DE1919 /* JQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 293AAAD91CEE0C2300DE1919 /* JQMeViewController.m */; };
 		293AAADD1CEE0E0500DE1919 /* JQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 293AAADC1CEE0E0500DE1919 /* JQTabBar.m */; };
+		29B102231CEE9F0400488AAD /* UIView+JQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B102221CEE9F0400488AAD /* UIView+JQExtension.m */; };
 		77A5A1BF1CEDB4AD00DABE07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A5A1BE1CEDB4AD00DABE07 /* main.m */; };
 		77A5A1C21CEDB4AD00DABE07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A5A1C11CEDB4AD00DABE07 /* AppDelegate.m */; };
 		77A5A1CA1CEDB4AD00DABE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77A5A1C91CEDB4AD00DABE07 /* Assets.xcassets */; };
@@ -48,6 +49,9 @@
 		293AAAD91CEE0C2300DE1919 /* JQMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQMeViewController.m; sourceTree = "<group>"; };
 		293AAADB1CEE0E0500DE1919 /* JQTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQTabBar.h; sourceTree = "<group>"; };
 		293AAADC1CEE0E0500DE1919 /* JQTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQTabBar.m; sourceTree = "<group>"; };
+		29B102201CEE9EA300488AAD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		29B102211CEE9F0400488AAD /* UIView+JQExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JQExtension.h"; sourceTree = "<group>"; };
+		29B102221CEE9F0400488AAD /* UIView+JQExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JQExtension.m"; sourceTree = "<group>"; };
 		77A5A1BA1CEDB4AC00DABE07 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A5A1BE1CEDB4AD00DABE07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77A5A1C01CEDB4AD00DABE07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +130,9 @@
 				293AAAD31CEE0C0500DE1919 /* JQNewViewController.m */,
 				293AAACF1CEE0BEC00DE1919 /* JQEssenceViewController.h */,
 				293AAAD01CEE0BEC00DE1919 /* JQEssenceViewController.m */,
+				29B102211CEE9F0400488AAD /* UIView+JQExtension.h */,
+				29B102221CEE9F0400488AAD /* UIView+JQExtension.m */,
+				29B102201CEE9EA300488AAD /* PrefixHeader.pch */,
 				77A5A1BD1CEDB4AD00DABE07 /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -296,6 +303,7 @@
 				293AAAD71CEE0C1300DE1919 /* JQFriendTrendsViewController.m in Sources */,
 				77A5A1F21CEDC63E00DABE07 /* JQTabBarController.m in Sources */,
 				77A5A1BF1CEDB4AD00DABE07 /* main.m in Sources */,
+				29B102231CEE9F0400488AAD /* UIView+JQExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mzzdxt.bsbdj.-----";
@@ -430,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mzzdxt.bsbdj.-----";
