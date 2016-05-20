@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by 王家齐 on 16/5/20.
+//  Copyright © 2016年 王家齐. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+JQExtension.h"
+#import "UIBarButtonItem+JQExtension.h"
+
+#ifdef DEBUG
+#define JQLog(...) NSLog(__VA_ARGS__)
+#else
+#define JQLog(...)
+#endif
+
+#define JQLogFunc JQLog(@"%s", __func__)
+
+#define JQRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define JQGlobalBg JQRGBColor(223, 223, 223)
+
+#endif /* PrefixHeader_pch */
