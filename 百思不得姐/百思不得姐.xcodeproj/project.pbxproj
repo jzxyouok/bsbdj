@@ -17,6 +17,8 @@
 		2914962B1CEEC464003E3E11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2914961F1CEEC464003E3E11 /* main.m */; };
 		2914962C1CEEC464003E3E11 /* JQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 291496231CEEC464003E3E11 /* JQTabBar.m */; };
 		291496321CEEC594003E3E11 /* UIBarButtonItem+JQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 291496311CEEC594003E3E11 /* UIBarButtonItem+JQExtension.m */; };
+		770C02DF1CEFECB000FF6638 /* JQNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770C02DE1CEFECB000FF6638 /* JQNavigationController.m */; };
+		770C02E11CEFF3B000FF6638 /* JQFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770C02E01CEFF3B000FF6638 /* JQFriendTrendsViewController.xib */; };
 		77A5A1CA1CEDB4AD00DABE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77A5A1C91CEDB4AD00DABE07 /* Assets.xcassets */; };
 		77A5A1D81CEDB4AD00DABE07 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A5A1D71CEDB4AD00DABE07 /* _____Tests.m */; };
 		77A5A1E31CEDB4AD00DABE07 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A5A1E21CEDB4AD00DABE07 /* _____UITests.m */; };
@@ -60,6 +62,9 @@
 		291496231CEEC464003E3E11 /* JQTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQTabBar.m; sourceTree = "<group>"; };
 		291496301CEEC594003E3E11 /* UIBarButtonItem+JQExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JQExtension.h"; sourceTree = "<group>"; };
 		291496311CEEC594003E3E11 /* UIBarButtonItem+JQExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JQExtension.m"; sourceTree = "<group>"; };
+		770C02DD1CEFECB000FF6638 /* JQNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQNavigationController.h; sourceTree = "<group>"; };
+		770C02DE1CEFECB000FF6638 /* JQNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQNavigationController.m; sourceTree = "<group>"; };
+		770C02E01CEFF3B000FF6638 /* JQFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JQFriendTrendsViewController.xib; sourceTree = "<group>"; };
 		77A5A1BA1CEDB4AC00DABE07 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A5A1C91CEDB4AD00DABE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77A5A1CE1CEDB4AD00DABE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,6 +161,7 @@
 			children = (
 				291496061CEEC464003E3E11 /* JQFriendTrendsViewController.h */,
 				291496071CEEC464003E3E11 /* JQFriendTrendsViewController.m */,
+				770C02E01CEFF3B000FF6638 /* JQFriendTrendsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,6 +276,8 @@
 			children = (
 				2914961D1CEEC464003E3E11 /* JQTabBarController.h */,
 				2914961E1CEEC464003E3E11 /* JQTabBarController.m */,
+				770C02DD1CEFECB000FF6638 /* JQNavigationController.h */,
+				770C02DE1CEFECB000FF6638 /* JQNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -407,7 +415,7 @@
 				TargetAttributes = {
 					77A5A1B91CEDB4AC00DABE07 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = F99DNARY2N;
+						DevelopmentTeam = HW936S7B5L;
 					};
 					77A5A1D21CEDB4AD00DABE07 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -444,6 +452,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770C02E11CEFF3B000FF6638 /* JQFriendTrendsViewController.xib in Resources */,
 				77A5A1CA1CEDB4AD00DABE07 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770C02DF1CEFECB000FF6638 /* JQNavigationController.m in Sources */,
 				291496271CEEC464003E3E11 /* JQNewViewController.m in Sources */,
 				291496241CEEC464003E3E11 /* JQEssenceViewController.m in Sources */,
 				291496251CEEC464003E3E11 /* JQFriendTrendsViewController.m in Sources */,
