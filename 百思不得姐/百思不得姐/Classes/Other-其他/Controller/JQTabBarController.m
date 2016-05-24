@@ -12,6 +12,7 @@
 #import "JQFriendTrendsViewController.h"
 #import "JQMeViewController.h"
 #import "JQTabBar.h"
+#import "JQNavigationController.h"
 
 @interface JQTabBarController ()
 
