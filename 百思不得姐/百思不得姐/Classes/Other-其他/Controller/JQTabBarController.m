@@ -12,6 +12,7 @@
 #import "JQFriendTrendsViewController.h"
 #import "JQMeViewController.h"
 #import "JQTabBar.h"
+#import "JQNavigationController.h"
 
 @interface JQTabBarController ()
 
@@ -60,9 +61,7 @@
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     
     // 包装一个导航控制器，添加导航控制器为tabBarController的子控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    // 为导航控制器设置背景图片
-    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    JQNavigationController *nav = [[JQNavigationController alloc] initWithRootViewController:vc];
     
     // 将导航控制器添加到子控制器
     [self addChildViewController:nav];
