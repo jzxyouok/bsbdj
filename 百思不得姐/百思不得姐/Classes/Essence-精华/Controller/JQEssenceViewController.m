@@ -7,6 +7,8 @@
 //
 
 #import "JQEssenceViewController.h"
+#import "JQRecommendTagsViewController.h"
+
 
 @interface JQEssenceViewController ()
 
@@ -29,7 +31,8 @@
 
 - (void)tagClick
 {
-    JQLogFunc;
+    JQRecommendTagsViewController *vc = [[JQRecommendTagsViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

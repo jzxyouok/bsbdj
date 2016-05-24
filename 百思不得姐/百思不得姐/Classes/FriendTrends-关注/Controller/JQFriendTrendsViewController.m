@@ -7,6 +7,7 @@
 //
 
 #import "JQFriendTrendsViewController.h"
+#import "JQRecommendViewController.h"
 
 @interface JQFriendTrendsViewController ()
 
@@ -29,7 +30,8 @@
 
 - (void)friendsClick
 {
-    JQLogFunc;
+    JQRecommendViewController *vc = [[JQRecommendViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
